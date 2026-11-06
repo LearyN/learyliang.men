@@ -182,10 +182,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,label:focus-within{outl
 .eyebrow::before,.eyebrow::after{content:'';width:clamp(24px,7vw,72px);height:1px;background:var(--gold-soft);flex:none}
 .hero h1{
   font-family:var(--font-display);font-weight:300;
-  font-size:clamp(42px,7.2vw,86px);line-height:1.02;letter-spacing:.01em;
-  margin:0 auto;max-width:16ch;
+  font-size:clamp(26px,4vw,50px);line-height:1.16;letter-spacing:.02em;
+  margin:0 auto;max-width:24ch;
 }
-.hero h1 em{font-style:italic;color:var(--gold);letter-spacing:.02em}
+.hero h1 .h1-line{display:block}
+.hero h1 em{font-style:italic;color:var(--gold);letter-spacing:.02em;white-space:nowrap}
 .hero h1 .lat{
   display:block;font-family:var(--font-mono);font-weight:400;
   font-size:clamp(9px,1.1vw,11px);letter-spacing:.42em;text-transform:uppercase;
@@ -301,7 +302,7 @@ body.show-domains .dom{display:inline}
   line-height:1.28;letter-spacing:.015em;margin:0 0 36px;max-width:24ch;
 }
 .contact .big a{
-  color:var(--gold);border-bottom:1px solid var(--gold-soft);
+  color:var(--gold);border-bottom:1px solid var(--gold-soft);padding-bottom:.06em;
   transition:border-color .25s ease,color .25s ease;
 }
 .contact .big a:hover{color:var(--ink);border-bottom-color:var(--ink)}
@@ -321,14 +322,14 @@ body.show-domains .dom{display:inline}
 /* ---------- footer ---------- */
 .foot{
   margin-top:clamp(52px,6.5vw,92px);padding-top:30px;border-top:1px solid var(--hair);
-  display:flex;justify-content:space-between;align-items:flex-end;gap:22px;flex-wrap:wrap;
+  display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;
 }
 .foot .couplet{
-  font-family:var(--font-display);font-size:17px;letter-spacing:.3em;color:var(--ink-2);margin:0;
+  font-family:var(--font-display);font-size:14px;letter-spacing:.26em;color:var(--ink-2);margin:0;
 }
 .foot .legal{
-  display:flex;gap:18px;font-family:var(--font-mono);font-size:9px;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--muted);
+  display:flex;gap:18px;font-family:var(--font-mono);font-size:9.5px;letter-spacing:.18em;
+  text-transform:uppercase;color:#6f665c;
 }
 .foot .legal a{transition:color .25s ease}
 .foot .legal a:hover{color:var(--gold)}
@@ -373,8 +374,8 @@ body.show-domains .dom{display:inline}
   .tool:nth-child(odd){border-right:none;padding-right:0}
   .tool:nth-child(even){padding-left:0}
   .sec-note{display:none}
-  .foot{flex-direction:column;align-items:flex-start;gap:16px}
-  .foot .couplet{letter-spacing:.22em}
+  .foot{align-items:center;gap:16px}
+  .foot .couplet{letter-spacing:.2em}
 }
 @media (max-width:480px){
   body{font-size:15px}
@@ -440,12 +441,10 @@ body.show-domains .dom{display:inline}
     <header class="hero">
       <p class="eyebrow load d1"><span class="lang-zh">搜索营销 · 国际站 · 增长</span><span class="lang-en">Search · International · Growth</span></p>
       <h1 class="load d2">
-        <span class="lang-zh">八年，<em>只做搜索</em>这件事</span>
-        <span class="lang-en">Eight years <em>in search</em></span>
+        <span class="lang-zh"><span class="h1-line">我们是开放网络里的</span><span class="h1-line"><em>微生物</em></span></span>
+        <span class="lang-en">We are the <em>microorganisms</em><br>of the open web</span>
         <span class="lat">Leary Liang · 梁紫天 · Guangzhou</span>
       </h1>
-      <p class="lede load d3 lang-zh">国际 SEO、付费增长、数据分析与平台合规——为大型内容平台把自然流量做成可持续的资产。</p>
-      <p class="lede load d3 lang-en">International SEO, paid growth, analytics and platform compliance — building organic traffic into a durable asset for large-scale platforms.</p>
     </header>
 
     <!-- ============ 01 ABOUT ============ -->
@@ -640,7 +639,7 @@ body.show-domains .dom{display:inline}
         <span class="sec-num">05</span>
         <h2><span class="lang-zh">联系</span><span class="lang-en">Contact</span></h2>
       </div>
-      <p class="big reveal"><span class="lang-zh">有合适的岗位或项目，直接写信给我。</span><span class="lang-en">Hiring, or have a project in mind? Write to me.</span> <a href="mailto:learyliang@gmail.com">learyliang@gmail.com</a></p>
+      <p class="big reveal"><span class="lang-zh">有合适的岗位或项目？</span><span class="lang-en">Hiring, or have a project in mind?</span> <a href="mailto:learyliang@gmail.com">learyliang@gmail.com</a></p>
       <dl class="contact-list reveal">
         <div>
           <dt>X</dt>
